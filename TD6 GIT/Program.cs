@@ -12,7 +12,7 @@ double AireHexagone (double longueurCote)
 {
     return (3 * Math.Sqrt(3) * Math.Pow(longueurCote, 2)) / 2;
 }
-
+//Calcul Aire d'un cercle 
 double AireCercle(double rayon)
 {
   
