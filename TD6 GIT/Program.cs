@@ -1,11 +1,12 @@
 ﻿
 using System;
+
 double Aire (double longueur,double Largeur)
 {
 
     return longueur*Largeur;
 }
-
+//Calcul de l'aire d'un hexagone avec logueurCote passé en parametre
 double AireHexagone (double longueurCote)
 {
     return (3 * Math.Sqrt(3) * Math.Pow(longueurCote, 2)) / 2;
