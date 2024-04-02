@@ -13,10 +13,15 @@ double AireHexagone (double longueurCote)
     return (3 * Math.Sqrt(3) * Math.Pow(longueurCote, 2)) / 2;
 }
 
+double AireCercle(double rayon)
+{
+  
+    return Math.PI * Math.Pow(rayon, 2);
+}
+
 double l, L;
 
-double l;
-double L;
+
 
 //Saisie des variables 
 Console.WriteLine("Saisir la longueur du rectangle :");
@@ -30,7 +35,10 @@ Console.WriteLine($"L'aire du rectangle est : {aireRectangle}");
 
 
 double longueurCote = 3.8;
+double rayon = 4;
 
 double aireHexagone = AireHexagone(longueurCote);
+double aireCercle = AireCercle(rayon);
 
 Console.WriteLine($"L'aire de l'hexagone est : {aireHexagone}");
+Console.WriteLine($"L'aire du cercle de rayon {rayon} est : {aireCercle}");
